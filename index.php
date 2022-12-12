@@ -1,5 +1,6 @@
 <!--
 Immaginare quali sono le classi necessarie per creare uno shop online con le seguenti caratteristiche:
+
 L'e-commerce vende prodotti per animali.
 I prodotti sono categorizzati, le categorie sono Cani o Gatti.
 I prodotti saranno oltre al cibo, anche giochi, cucce, etc.
@@ -13,3 +14,7 @@ Il cliente effettua il pagamento dei prodotti nel carrello con la carta di credi
 -->
 
 <?php
+require_once __DIR__ . '/Models/Food.php';
+require_once __DIR__ . '/Models/Game.php';
+require_once __DIR__ . '/Models/Kennel.php';
+require_once __DIR__ . '/Models/Product.php';
