@@ -1,4 +1,5 @@
 <?php
+require __DIR__ . '/Product.php';
 
 class Food extends Product
 {
@@ -6,7 +7,7 @@ class Food extends Product
     public $ingredients;
     public $consistency;
 
-    function __construct($weight, string $ingredients, string $consistency)
+    public function set_food($weight, string $ingredients, string $consistency)
     {
         $this->weight = $weight;
         $this->$ingredients = $ingredients;

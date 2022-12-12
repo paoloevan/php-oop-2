@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/Product.php';
 
 class Game extends Product
 {
@@ -7,7 +8,7 @@ class Game extends Product
     public $width;
     public $type;
 
-    function __construct($weight, $height, $width, string $type)
+    public function set_game($weight, $height, $width, string $type)
     {
         $this->weight = $weight;
         $this->height = $height;

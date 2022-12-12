@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/Product.php';
 
 class Kennel extends Product
 {
@@ -7,7 +8,7 @@ class Kennel extends Product
     public $width;
     public $materials;
 
-    function __construct($weight, $height, $width, string $materials)
+    public function set_kennel($weight, $height, $width, string $materials)
     {
         $this->weight = $weight;
         $this->height = $height;
