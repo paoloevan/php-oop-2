@@ -7,7 +7,7 @@ class Kennel extends Product
     public $width;
     public $materials;
 
-    function __construct($weight, $height, $width, $materials)
+    function __construct($weight, $height, $width, string $materials)
     {
         $this->weight = $weight;
         $this->height = $height;

@@ -7,7 +7,7 @@ class Game extends Product
     public $width;
     public $type;
 
-    function __construct($weight, $height, $width, $type)
+    function __construct($weight, $height, $width, string $type)
     {
         $this->weight = $weight;
         $this->height = $height;
