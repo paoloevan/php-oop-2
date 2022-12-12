@@ -50,4 +50,4 @@ $food_cat->set_food($products['food_cat']['weight'], $products['food_cat']['ingr
 
 $new_products = [];
 array_push($new_products, $kennel_cat, $toy_dog, $food_cat);
-// var_dump($new_products[0]->id_product);
+var_dump($new_products[0]->category);

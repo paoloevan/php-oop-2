@@ -45,8 +45,10 @@ require_once __DIR__ . '/database/db.php';
                 <div class="col-4">
                     <div class="card">
                         <div class="card-body">
-                            <h3 class="card-title"><?php $product->id_product ?></h3>
-                            <p class="card-text">Text</p>
+                            <img width="100" src="<?= $product->image_path ?>" alt="">
+                            <h3 class="card-title"><?= $product->id_product ?></h3>
+                            <p class="card-text"><?= $product->price ?></p>
+                            <p class="card-text"><?= $product->category->name ?></p>
                         </div>
                     </div>
                 </div>
