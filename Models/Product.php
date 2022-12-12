@@ -1,6 +1,5 @@
 <?php
 require_once __DIR__ . '/Category.php';
-include __DIR__ . '/Food.php';
 
 class Product
 {
