@@ -47,3 +47,7 @@ $toy_dog->set_game($products['toy_dog']['weight'], $products['toy_dog']['height'
 
 $food_cat = new Food($products['food_cat']['id'], $products['food_cat']['price'], new Category($products['food_cat']['category_name']), $products['food_cat']['image']);
 $food_cat->set_food($products['food_cat']['weight'], $products['food_cat']['ingredients'], $products['food_cat']['consistency']);
+
+$new_products = [];
+array_push($new_products, $kennel_cat, $toy_dog, $food_cat);
+// var_dump($new_products[0]->id_product);

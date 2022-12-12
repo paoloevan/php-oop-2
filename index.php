@@ -20,3 +20,39 @@ require_once __DIR__ . '/Models/Kennel.php';
 require_once __DIR__ . '/Models/Product.php';
 require_once __DIR__ . '/Models/Category.php';
 require_once __DIR__ . '/database/db.php';
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi' crossorigin='anonymous'>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">Pet Shop</h1>
+    </header>
+
+    <main>
+        <div class="row">
+            <?php foreach ($new_products as $product) { ?>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title"><?php $product->id_product ?></h3>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+        </div>
+    </main>
+</body>
+
+</html>
