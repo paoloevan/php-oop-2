@@ -6,17 +6,14 @@ trait Priceless
 
     public function getPriceByWeight(Float $price, Float $weight)
     {
-        if ($price === 0 || $weight === 0) {
-            throw new Exception('Price not found');
-        } else {
+        try {
+            if ($price == 0 || $weight == 0) {
+                throw new Exception('Price not found');
+            }
             $priceWeight = number_format($price / $weight, 2);
             return $this->price = $priceWeight;
+        } catch (Exception $e) {
+            echo $e->getMessage();
         }
     }
-    // try {
-    //     echo getPriceByWeight(0, 0);
-    // } catch (Exception $e) {
-    //     echo 'Price not found';
-    // }
-
 }
