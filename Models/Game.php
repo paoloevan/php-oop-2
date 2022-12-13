@@ -7,8 +7,9 @@ class Game extends Product
     public $width;
     public $type;
 
-    public function set_game($height, $width, string $type)
+    public function set_game(int $id, $weight, Float $price, Category $category, string $image_path, $height, $width, string $type)
     {
+        parent::__construct($id, $weight, $price, $category, $image_path);
         $this->height = $height;
         $this->width = $width;
         $this->type = $type;

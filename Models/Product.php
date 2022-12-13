@@ -9,7 +9,7 @@ class Product
     public $category;
     public $image_path;
 
-    function __construct(int $id, $weight, $price, Category $category, string $image_path)
+    public function __construct(int $id, $weight, Float $price, Category $category, string $image_path)
     {
         $this->id_product = $id;
         $this->price = $price;

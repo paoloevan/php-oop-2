@@ -7,8 +7,9 @@ class Kennel extends Product
     public $width;
     public $materials;
 
-    public function set_kennel($height, $width, string $materials)
+    public function set_kennel(int $id, $weight, Float $price, Category $category, string $image_path, $height, $width, string $materials)
     {
+        parent::__construct($id, $weight, $price, $category, $image_path);
         $this->height = $height;
         $this->width = $width;
         $this->materials = $materials;

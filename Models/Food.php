@@ -6,15 +6,15 @@ class Food extends Product
     public $ingredients;
     public $consistency;
 
-    function __construct(string $ingredients, string $consistency)
+    function __construct(int $id, $weight, Float $price, Category $category, string $image_path, string $ingredients, string $consistency)
     {
-        $this->$ingredients = $ingredients;
-        $this->consistency = $consistency;
-    }
-
-    public function set_food(string $ingredients, string $consistency)
-    {
-        $this->$ingredients = $ingredients;
+        parent::__construct($id, $weight, $price, $category, $image_path); //facoltativo, lo fa di default se non commenti sotto
+        // $this->id_product = $id;
+        // $this->price = $price;
+        // $this->category = $category;
+        // $this->image_path = $image_path;
+        $this->weight = $weight;
+        $this->ingredients = $ingredients;
         $this->consistency = $consistency;
     }
 }
