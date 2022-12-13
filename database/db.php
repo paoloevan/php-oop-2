@@ -39,13 +39,13 @@ require_once __DIR__ . '/../Models/Product.php';
 require_once __DIR__ . '/../Models/Category.php';
 require_once __DIR__ . '/../database/db.php';
 
-$kennel_cat = new Kennel($products['kennel_cat']['id'], $products['kennel_cat']['price'], new Category($products['kennel_cat']['category_name']), $products['kennel_cat']['image']);
+$kennel_cat = new Kennel($products['kennel_cat']['id'], $products['kennel_cat']['weight'], $products['kennel_cat']['price'], new Category($products['kennel_cat']['category_name']), $products['kennel_cat']['image']);
 $kennel_cat->set_kennel($products['kennel_cat']['weight'], $products['kennel_cat']['height'], $products['kennel_cat']['width'], $products['kennel_cat']['materials']);
 
-$toy_dog = new Game($products['toy_dog']['id'], $products['toy_dog']['price'], new Category($products['toy_dog']['category_name']), $products['toy_dog']['image']);
+$toy_dog = new Game($products['toy_dog']['id'],  $products['toy_dog']['weight'], $products['toy_dog']['price'], new Category($products['toy_dog']['category_name']), $products['toy_dog']['image']);
 $toy_dog->set_game($products['toy_dog']['weight'], $products['toy_dog']['height'], $products['toy_dog']['width'], $products['toy_dog']['type']);
 
-$food_cat = new Food($products['food_cat']['id'], $products['food_cat']['price'], new Category($products['food_cat']['category_name']), $products['food_cat']['image']);
+$food_cat = new Food($products['food_cat']['id'],  $products['food_cat']['weight'], $products['food_cat']['price'], new Category($products['food_cat']['category_name']), $products['food_cat']['image']);
 $food_cat->set_food($products['food_cat']['weight'], $products['food_cat']['ingredients'], $products['food_cat']['consistency']);
 
 $new_products = [];
