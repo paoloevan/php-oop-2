@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/Product.php';
+require_once __DIR__ . '/../Traits/Priceless.php';
 
 class Kennel extends Product
 {
@@ -14,4 +15,6 @@ class Kennel extends Product
         $this->width = $width;
         $this->materials = $materials;
     }
+
+    use Priceless;
 }

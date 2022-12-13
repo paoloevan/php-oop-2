@@ -48,3 +48,5 @@ $food_cat = new Food($products['food_cat']['id'],  $products['food_cat']['weight
 $new_products = [];
 array_push($new_products, $kennel_cat, $toy_dog, $food_cat);
 //var_dump($new_products[0]->category);
+
+var_dump($food_cat->getPriceByWeight($products['food_cat']['price'], $products['food_cat']['weight']));
