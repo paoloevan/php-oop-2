@@ -23,7 +23,7 @@ $products = [
     ],
     'food_cat' => [
         'id' => 123,
-        'price' => 101,
+        'price' => 0,
         'category_name' => 'cat',
         'image' => 'https://tikipets.com/wp-content/themes/tikipets/img/slide-cat-pukapuka.png',
         'weight' => 12.5,
